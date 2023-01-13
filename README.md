@@ -62,7 +62,7 @@ Memakai Sc Lain Untuk Mengambil Session Atau Kalau Kalian Masih pengguna Satu Se
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/ImYanXiao/Elaina-MultiDevice)
 
 ## ```USER REPLIT```
-[![Run on Repl.it](https://repl.it/badge/github/ImYanXiao/Elaina-MultiDevice)](https://repl.it/github/ImYanXiao/Elaina-MultiDevice)
+[![Run on Repl.it](https://repl.it/badge/github/Wadcawtgt12/9v1)](https://repl.it/github/wadcawtgt12/9v1)
 
 ---------
 
