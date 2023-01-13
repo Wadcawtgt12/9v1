@@ -117,7 +117,7 @@ Set prefix
 
 ### ❗ Note : Untuk apikey kamu bisa beli ke website itu sendiri :D
 
----------
+--------
 
 ## ```Thanks to ✨```
 * [`Allah SWT`](https://github.com/Lucife-Putra)
