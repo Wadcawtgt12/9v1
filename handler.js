@@ -823,11 +823,11 @@ esteh: 0,
                 m.isCommand = true
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
                 if (xp > 200)
-                    this.sendButton(m.chat, `*Sepertinya Anda Bermain Curang, Menggunakan Calculator*`, author, null, [['Buy Limit', '/buy limit'], ['Touch Me >,<', '/menu']] , m)
+                    this.sendButton(m.chat, `*Sepertinya Anda Bermain Curang, Menggunakan Calculator*`, author, null, [['Buy Limit', '/buy limit'], ['Touch Me >,<', '.? menu']] , m)
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.sendButton(m.chat, `[❗] *Limit Anda Habis, Beberapa Command Tidak Bisa Di Akses*`, author, null, [['Buy Limit', '/buy limit'], ['Touch Me >,<', '/menu']] , m)
+                    this.sendButton(m.chat, `[❗] *Limit Anda Habis, Beberapa Command Tidak Bisa Di Akses*`, author, null, [['Buy Limit', '/buy limit'], ['Touch Me >,<', '.? menu']] , m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
@@ -1028,7 +1028,7 @@ Untuk mematikan fitur ini, ketik
 *.off antidelete*
 
 Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
-*.delete*`, author, [['OFF FITURE', '.off antidelete'],['Touch Me >,<', '.menu']], msg, adReply)
+*.delete*`, author, [['OFF FITURE', '.off antidelete'],['Touch Me >,<', '.? menu']], msg, adReply)
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
@@ -1065,12 +1065,12 @@ RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur i
         restrict: `${nmsr}\n
 Fitur ini di *disable* !`
     }[type]
-    if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['Touch Me >,<', '.menu'],['OWNER', '.menu']],m)
+    if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['Touch Me >,<', '.? menu'],['OWNER', '.? menu']],m)
     
      let msgg = {
     	unreg: `${nmsr}\nSilahkan MASUK ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah MASUK selanjutnya* ?`
 }[type]
-if (msgg) return conn.sendButton(m.chat, `${global.htki} MASUK ${global.htka}`, msgg, `${imgr + 'Verify'}`, [['Saya Goblok', '/verify']],m)
+if (msgg) return conn.sendButton(m.chat, `${global.htki} MASUK ${global.htka}`, msgg, `${imgr + 'Verify'}`, [['Pilih Umur Kamu Disini !', '/verify']],m)
 }    
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {

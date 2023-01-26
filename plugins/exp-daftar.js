@@ -52,7 +52,7 @@ const listMessage = {
   text: `│›Silahkan Pilih Umur Anda Di Bawah Ini...`,
   footer: `┗ *Nama kamu:* ${conn.getName(m.sender)}\n<❔>Ingin nama Kostum? jenis *${usedPrefix + command} nama lu.umur lu*`,
   title: "▢- - - - - DAFTAR - - - - -",
-  buttonText: "Saya Ga Normal !",
+  buttonText: "Pilih Umur Kamu Disini !",
   sections
 }
 
@@ -63,8 +63,8 @@ const listMessage = {
   if (!name) throw 'Nama Lu Mana Anj'
   if (!age) throw 'Umur Di Isilah Ngent'
   age = parseInt(age)
-  if (age > 30) throw 'Woy Tua Nikah Sono (。-`ω´-)'
-  if (age < 5) throw 'Njir Sekolah Sana Dek'
+  if (age > 30) throw 'Nikah Sono (。-`ω´-)'
+  if (age < 5) throw 'Sekolah Sana Dek'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
@@ -101,7 +101,7 @@ const listMessage = {
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'Touch Me >,<'},'type':1},
+{'buttonId':'.? menu','buttonText':{'displayText':'Touch Me >,<'},'type':1},
 {'buttonId':'.donasi','buttonText':{'displayText':'Donasi'},'type':1}
 ],
 'headerType':6}
